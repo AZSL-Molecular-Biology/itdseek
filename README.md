@@ -18,7 +18,7 @@ ITDseek for detection
 ./itdseek.sh <sample.bam> <ref.fasta> <samtools> > sample.itdseek.vcf
 ```
 - *sample.bam*: indexed BAM alignment file, generated from BWA-MEM with -M option (Mark shorter split hits as secondary). To index the BAM file: `samtools index sample.bam`
-- *ref.fasta*: indexed hg19 reference genome in FASTA format. Only positions **chr13:28607161-28609590** will be considered, or `itdseek.sh` needs to be modified accordingly. To index the FASTA file: `samtools faidx ref.fasta`
+- *ref.fasta*: indexed hg19 reference genome in FASTA format. Only positions **chr13:28607161-28609590** will be considered, or `itdseek.sh` needs to be modified accordingly. (Note: which is exactly what we have done.) To index the FASTA file: `samtools faidx ref.fasta`
 - *samtools*: path to samtools executable. Use `samtools` if it is already included in a directory defined in `$PATH`
 - *standard output (STDOUT)*: variant calls in [VCF version 4.1](http://samtools.github.io/hts-specs/VCFv4.1.pdf)
 

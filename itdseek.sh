@@ -28,4 +28,4 @@ if [ "$(version "$SAMTOOLS_VERSION")" -lt "$(version "$SAMTOOLS_VERSION_REQUIRED
 fi
 
 # pipeline SAM alignments to itdseek.pl
-"$SAMTOOLS" view "$BAM" chr13:28607161-28609590 | "${SCRIPT_DIR}/itdseek.pl" --refseq "$REFSEQ" --samtools "$SAMTOOLS" --bam "$BAM"
+"$SAMTOOLS" view "$BAM" chr13:28033024-28035453 | "${SCRIPT_DIR}/itdseek.pl" --refseq "$REFSEQ" --samtools "$SAMTOOLS" --bam "$BAM"
